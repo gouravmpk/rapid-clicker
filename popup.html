@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rapid Clicker</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    .button { margin: 5px; }
+  </style>
+</head>
+<body>
+  <h1>Rapid Clicker</h1>
+  <div>
+    <label for="width">Width:</label>
+    <input type="number" id="width" placeholder="Enter width" />
+  </div>
+  <div>
+    <label for="height">Height:</label>
+    <input type="number" id="height" placeholder="Enter height" />
+  </div>
+  <div>
+    <label for="clicksPerSecond">Clicks per second:</label>
+    <input type="number" id="clicksPerSecond" value="10" />
+  </div>
+  <div>
+    <button id="startClicking" class="button">Start Clicking</button>
+    <button id="stopClicking" class="button">Stop Clicking</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

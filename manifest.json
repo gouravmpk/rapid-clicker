@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "Rapid Clicker",
+  "version": "1.0",
+  "description": "Rapidly clicks on the mouse pointer's position.",
+  "permissions": ["activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F"
+      },
+      "description": "Open Rapid Clicker"
+    },
+    "start_clicking": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S"
+      },
+      "description": "Start clicking"
+    },
+    "stop_clicking": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+X"
+      },
+      "description": "Stop clicking"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
